@@ -51,6 +51,7 @@ $ node index.js
 Note: The endpoint findAll on /vendors can be customized, where you can query filtering such as skip and limit the contents for pagination, find contents based on tag and by vendor name.
       Above is just the example of the full url path, you can also exclude any filter as you want. For skip and limit when not provided, they are set to 0 and 10 as default.
       Below is a few examples:
+      
       /vendors?tag="desiredTag1"&tag="desiredTag2"&$skip="desiredSkip"&$limit="desiredLimit" //find all vendors with provided tags
       /vendors?name[$like]=%VendorName% // find vendors by name with provided keyword. 
 POST body { name: "name", address: "address", phone: "phone", tag:"tag" } 
